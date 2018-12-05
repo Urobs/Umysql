@@ -1,0 +1,30 @@
+{
+  "name": "umsyql",
+  "version": "1.0.0",
+  "description": "a module develops with pure msyql client `msyql` and aims to learn",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Urobs/Umysql.git"
+  },
+  "dependencies": {
+    "mysql": "2.16.0"
+  },
+  "keywords": [
+    "learning",
+    "test",
+    "pure"
+  ],
+  "author": "Urob",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Urobs/Umysql/issues"
+  },
+  "homepage": "https://github.com/Urobs/Umysql#readme"
+}
