@@ -2,8 +2,8 @@ const escape = require('mysql').escape
 const query = require('./query')
 const sqlApiError = require('../api_error')
 
-async function insertData (data) {
-  const { tableName, fields } = data
+async function create (options) {
+  const { tableName, fields } = options
   const sql = `INSERT INTO ${tableName} SET ${escape(fields)}`
   const dataList = await query(sql)
     .catch((err) => {
@@ -12,4 +12,4 @@ async function insertData (data) {
     })
   return dataList
 }
-module.exports = { insertData }
+module.exports = create
